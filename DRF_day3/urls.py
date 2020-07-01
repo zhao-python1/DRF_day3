@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('library/', include("library.urls")),
+    path('ssrview/', include("ssrview.urls")),
     # 指定图片路径
     url(r"^media/(?P<path>.*)", serve, {"document_root": settings.MEDIA_ROOT}),
 ]
